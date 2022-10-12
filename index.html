@@ -1,0 +1,44 @@
+<html>
+<header>
+    <link rel="stylesheet" href="style.css">
+</header>
+
+<body>
+    <div class="gameDiv">
+        <div class="radioDiv">
+            <button class="resetBtn" onclick="onResetBtnClick()">new game</button>
+            <div>
+                <label class="radioTxt" id="fname" >easy</label>
+                <input name="radio" value="huey" class="radioInput" type="radio" data-difficulty="easy" onClick="onRadioClick(this)" value="HTML">
+            </div>
+
+            <div>
+                <label class="radioTxt">medium</label>
+                <input name="radio" class="radioInput" type="radio" data-difficulty="medium" onClick="onRadioClick(this)"
+                    value="HTML">
+            </div>
+            <div>
+                <label class="radioTxt">hard</label>
+                <input name="radio" class="radioInput""  type="radio" data-difficulty="hard" onClick="onRadioClick(this)" value="HTML">
+            </div>
+
+        </div>
+        <div>
+
+            <div class="utilitesDiv">
+                <div class="currNumberDiv">
+                    <p>next number :</p>
+                </div>
+                <div class="timerDiv">
+                    <span id="seconds"> </span>
+                    <img class="timerImg" src="timer.png" alt="">
+                </div>
+            </div>
+        </div>
+        <table class="table">
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
